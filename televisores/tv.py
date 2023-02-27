@@ -77,7 +77,7 @@ class TV:
     ##metodo para subir volumen
     def volumenUp(self):
         if (self.estado==True and self.volumen>=0 and self.volumen!=7):
-            self.volumen-=1
+            self.volumen+=1
             
     ##metodo para bajar volumen
     def volumenDown(self):
