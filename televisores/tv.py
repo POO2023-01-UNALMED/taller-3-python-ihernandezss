@@ -26,9 +26,25 @@ class TV:
     def setCanal (self,canal):
         self.canal=canal
 
+    def getMarca (self):
+        return self.marca
+    
+    def getControl(self):
+        return self.control
+    
+    def getPrecio(self):
+        return self.precio
+    
+    def getVolumen(self):
+        return self.volumen
+    
+    def getCanal(self):
+        return self.canal
+        
+
     ##setter y getter del atributo de clase numTV, el cual necesariamente tiene un método de clase
     @classmethod
-    def setnumTV(cls, numTV):
+    def setNumTV(cls, numTV):
         cls.numTV = numTV
 
     @classmethod
@@ -62,4 +78,3 @@ class TV:
     def volumenDown(self):
         if (self.estado==True and self.volumen>0 and self.volumen<=7):
             self.volumen-=1
-
