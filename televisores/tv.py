@@ -5,9 +5,9 @@ class TV:
         self.marca=marca
         self.estado=estado
         self.control=None
-        canal=1
-        volumen=1
-        precio=500
+        self.canal=1
+        self.volumen=1
+        self.precio=500
         TV.numTV+=1
     
     #setters y getters
