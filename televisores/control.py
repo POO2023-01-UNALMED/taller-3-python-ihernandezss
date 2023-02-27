@@ -34,8 +34,9 @@ class Control:
         if (self.tv.estado==True and self.tv.volumen >=0 and self.tv.volumen <7):
             self.tv.volumen+=1
             
+    ##metodo ajustar canal
     def setCanal(self, canal):
-        self.canal=canal
+        self.tv.canal=canal
 
     ##metodo bajar volumen
     def volumenDown(self):
