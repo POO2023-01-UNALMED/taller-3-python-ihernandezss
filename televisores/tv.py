@@ -66,7 +66,7 @@ class TV:
 
     ##metodo para subir canal
     def canalUp(self):
-        if (self.estado==True and self.canal>=1 and self.canal <120):
+        if (self.estado==True and self.canal>=1 and self.canal != 120):
             self.canal+=1
 
     ##metodo para bajar canal
@@ -76,7 +76,7 @@ class TV:
 
     ##metodo para subir volumen
     def volumenUp(self):
-        if (self.estado==True and self.volumen>=0 and self.volumen<7):
+        if (self.estado==True and self.volumen>=0 and self.volumen!=7):
             self.volumen-=1
             
     ##metodo para bajar volumen
