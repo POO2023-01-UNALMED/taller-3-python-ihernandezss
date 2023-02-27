@@ -21,7 +21,7 @@ class Control:
 
     ##metodo subir canal
     def canalUp(self):
-        if (self.tv.estado==True and self.tv.canal>=1 and self.tv.canal <120):
+        if (self.tv.estado==True and self.tv.canal>=1 and self.tv.canal !=120):
             self.tv.canal+=1
 
     ##metodo bajar canal
@@ -31,12 +31,13 @@ class Control:
 
     ##metodo subir volumen
     def volumenUp(self):
-        if (self.tv.estado==True and self.tv.volumen >=0 and self.tv.volumen <7):
+        if (self.tv.estado==True and self.tv.volumen >=0 and self.tv.volumen !=7):
             self.tv.volumen+=1
             
     ##metodo ajustar canal
     def setCanal(self, canal):
-        self.tv.canal=canal
+        if (self.tv.estado==True):
+            self.tv.canal=canal
 
     ##metodo bajar volumen
     def volumenDown(self):
