@@ -40,6 +40,9 @@ class TV:
     
     def getCanal(self):
         return self.canal
+    
+    def getEstado(self):
+        return self.estado
         
 
     ##setter y getter del atributo de clase numTV, el cual necesariamente tiene un método de clase
