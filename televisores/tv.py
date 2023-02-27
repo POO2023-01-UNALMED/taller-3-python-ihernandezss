@@ -21,10 +21,12 @@ class TV:
         self.precio=precio
 
     def setVolumen (self,volumen):
-        self.volumen=volumen
+        if (self.estado==True):
+            self.volumen=volumen
 
     def setCanal (self,canal):
-        self.canal=canal
+        if (self.estado==True):
+            self.canal=canal
 
     def getMarca (self):
         return self.marca
