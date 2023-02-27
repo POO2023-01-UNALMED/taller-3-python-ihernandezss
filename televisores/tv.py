@@ -28,11 +28,11 @@ class TV:
 
     ##setter y getter del atributo de clase numTV, el cual necesariamente tiene un método de clase
     @classmethod
-    def setnumTV(cls, numTV):
+    def setNumTV(cls, numTV):
         cls.numTV = numTV
 
     @classmethod
-    def getnumTV(cls):
+    def getNumTV(cls):
         return cls.numTV
     
     ##metodo para encender televisor
