@@ -48,7 +48,7 @@ class TV:
         cls.numTV = numTV
 
     @classmethod
-    def getnumTV(cls):
+    def getNumTV(cls):
         return cls.numTV
     
     ##metodo para encender televisor
